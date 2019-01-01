@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Issue Log</title>
+</head>
+<body>
+<h3>Enter Issue Details</h3>
+	<form action="#" th:object="${issue}" method="POST">
+        <p><input type="text" th:field="*{terminalId}"/>Terminal Id: </p>
+        <p><input type="text" th:field="*{issueDesc}" />Issue Details: </p>
+        <p><input type="text" th:field="*{logger}" />Branch Logger: </p>
+        <p><input type="text" th:field="*{loggerEmail}" />Logger Email: </p>
+        <p><input type="text" th:field="*{loggerPhoneNo}" />Logger Phone Number: </p>
+        <p><input type="submit" value="Submit Issue" /></p>
+		<p><input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
